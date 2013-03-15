@@ -9,6 +9,11 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
 if !exists("no_plugin_maps") && !exists("no_puppet_maps")
     if !hasmapto("<Plug>AlignRange")
         map <buffer> <LocalLeader>= <Plug>AlignRange
